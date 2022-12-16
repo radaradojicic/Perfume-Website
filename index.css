@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 8px;
+}
+header .logo {
+  width: 40%;
+}
+header nav {
+  align-self: center;
+  text-align: center;
+}
+header ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+header .nav-img {
+  text-align: end;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  margin: 16px;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.img {
+  width: 55%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  border-radius: 24px;
+  border: none;
+}
+
+.images {
+  position: relative;
+}
+
+.img-frame {
+  z-index: 1;
+  border: 1px solid black;
+  left: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-parfume {
+  z-index: 2;
+  left: 45px;
+  top: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.parfume {
+  display: grid;
+  gap: 10px;
+}
+.parfume .parfume-subtitle1 {
+  text-transform: uppercase;
+  color: #868584;
+  font-size: 24px;
+}
+.parfume .parfume-title {
+  font-size: 36px;
+}
+.parfume .parfume-subtitle2 {
+  font-size: 20px;
+}
+.parfume .parfume-description {
+  color: #868584;
+}
+.parfume .parfume-price2 {
+  margin-top: 1.5rem;
+  font-size: 36px;
+}
+.parfume .parfume-price1 {
+  text-decoration: line-through;
+  color: #868584;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  margin-top: 1rem;
+}
+.cards .card1, .cards .card2, .cards .card3 {
+  border: 1px solid black;
+  /* text-align: center; */
+  border-radius: 20px;
+  width: 100px;
+  height: 75px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+.cards .card3 {
+  border: 3px solid black;
+  background-color: #FBEBEB;
+}
+
+.card-content {
+  margin-top: 16px;
+}
+.card-content .volume {
+  font-size: 20px;
+}
+
+.counter-wrapper {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  width: 70%;
+  gap: 30px;
+  margin-top: 2 rem;
+}
+
+.btn-decrease, .btn-add {
+  cursor: pointer;
+  font-size: 36px;
+  color: #231F20;
+}
+.btn-decrease:hover, .btn-add:hover {
+  border: none;
+  background-color: #FBEBEB;
+}
+.btn-decrease:focus, .btn-add:focus {
+  border: 1px solid black;
+}
+.btn-decrease:active, .btn-add:active {
+  border: 1px solid black;
+  background-color: #FBEBEB;
+}
+
+.count-number {
+  font-size: 36px;
+}
+
+.btn-counter {
+  border: 1px solid black;
+  padding: 12px 32px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.btn-counter:hover {
+  color: black;
+  background-color: white;
+  font-weight: 700;
+}
+.btn-counter:focus {
+  color: white;
+  background-color: black;
+}
+.btn-counter:active {
+  color: #868584;
+  background-color: black;
+}
+
+.previews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 4rem;
+  margin-top: 3rem;
+}
+.previews .preview {
+  height: 90px;
+  width: 90px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="./images/logo.svg" alt="logo">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="#">women&apos;s</a></li>
+                <li><a href="#">men&apos;s</a></li>
+                <li><a href="#">brands</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-img">
+            <img src="./images/shopp.svg" alt="shopp">
+            <img src="./images/ellipse.svg" alt="ellipse"> 
+        </div> 
+    </header>
+    <main>
+        <div class="grid">
+            <section class="images">
+                <img class=" img img-frame" src="./images/pink-frame.svg" alt="pink-frame">
+                <img class=" img img-parfume" src="./images/parfume.svg" alt="parfume">
+            </section>
+            
+            <section class="parfume">
+                <div class="parfume-subtitle1">Narciso</div>
+                <h1 class="parfume-title">Ruby Orchid Fragrance</h1>
+                <div class="parfume-subtittle2">Eau de Parfum for her</div>
+                <p class="parfume-description">Experience the iconic original female fragrance by Narciso. Addictive floral notes with the warm woody undertones inspires a whirlwind of sweet sensations, transporting you to a world of floral fantasy.</p>
+                <div class="parfume-price2">124.00&euro;</div>
+                <div class="parfume-price1">184.00&euro;</div>
+                <div class="cards">
+                    <div class="card1">
+                            <div class="card-content">
+                                <div class="volume">30ml</div>
+                                <div class="price">50.00&euro;</div>  
+                            </div>
+                    </div>
+                    <div class="card2">
+                        <div class="card-content">
+                            <div class="volume">50ml</div>
+                            <div class="price">100.00&euro;</div>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="card-content">
+                            <div class="volume">80ml</div>
+                            <div class="price">124.00&euro;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="counter-wrapper">
+                    <div id="btn-left" class="btn-decrease" onclick="firstOperation ()">-</div>
+                    <div id="counter-number" class="count-number">1</div>
+                    <div id="btn-right" class="btn-add" onclick="secondOperation ()">+</div>
+                    <div class="btn-counter">Add to cart</div>
+                </div>
+            </section>
+            <section>
+                <div class="previews">
+                    <img class="preview" src="./images/preview3.svg" alt="">
+                    <img class="preview" src="./images/preview2.svg" alt="">
+                    <img class="preview" src="./images/preview1.svg" alt="">
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    
+</body>
+</html>
